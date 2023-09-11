@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-of-screen: rgb(44, 44, 44);
+    --ferrari-color: yellow;
+    --ferrari-background: #c4151c;
+}
+
+.title-class {
+    color: var(--ferrari-color);
+}
+
+.container-main-class {
+    margin-top: 50px;
+}
+
+.container-body-calculator {
+    background-color: var(--ferrari-background);
+    width: 270px;
+    height: 400px;
+    margin: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container-header-calculator span {
+    font-size: .7em;
+    margin-left: 20px;
+}
+
+.container-screen-calculator {
+    text-align: right;
+    background-color: var(--color-of-screen);
+    color: var(--ferrari-color);
+    height: 70px;
+    border-radius: 5px;
+}
+
+.container-screen-calculator > div {
+    padding: 0 30px;
+}
+
+.input-container-class {
+    height: 27px;
+}
+
+.input-span-class {
+    font-size: .9em;
+}
+
+.output-span-class {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container-buttons-calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* TEAMS */
+.container-teams-class {
+    margin-top: 50px;
+    height: 75px;
+}
+
+.container-teams-class button {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container-teams-class img {
+    width: 50px;
+    height: 50px;
+}
