@@ -31,6 +31,77 @@ class Calculator {
         this.button08 = document.querySelector ("#button-08-id")
         this.button09 = document.querySelector ("#button-09-id")
 
+        this.alfaRomeoButton = document.querySelector ("#alfa-romeo-button-id")
+        this.alphaTauriButton = document.querySelector ("#alpha-tauri-button-id")
+        this.alpineButton = document.querySelector ("#alpine-button-id")
+        this.astonMartinButton = document.querySelector ("#aston-martin-button-id")
+        this.ferrariButton = document.querySelector ("#ferrari-button-id")
+        this.haasButton = document.querySelector ("#haas-button-id")
+        this.mclarenButton = document.querySelector ("#mclaren-button-id")
+        this.mercedesButton = document.querySelector ("#mercedes-button-id")
+        this.redBullButton = document.querySelector ("#red-bull-button-id")
+        this.williamsButton = document.querySelector ("#williams-button-id")
+
+        this.alfaRomeoButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#1d1c50"
+            document.querySelector ("#container-screen-calculator-id").style.color = "#f8f497"
+            document.querySelector ("#title-id").style.color = "#f8f497"
+        })
+
+        this.alphaTauriButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#47566b"
+            document.querySelector ("#container-screen-calculator-id").style.color = "#f3f3f3"
+            document.querySelector ("#title-id").style.color = "#f3f3f3"
+        })
+
+        this.alpineButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#0070bb"
+            document.querySelector ("#container-screen-calculator-id").style.color = "#c6c6c6"
+            document.querySelector ("#title-id").style.color = "#c6c6c6"
+        })
+
+        this.astonMartinButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#00a489"
+            document.querySelector ("#container-screen-calculator-id").style.color = "white"
+            document.querySelector ("#title-id").style.color = "white"
+        })
+
+        this.ferrariButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#c4151c"
+            document.querySelector ("#container-screen-calculator-id").style.color = "yellow"
+            document.querySelector ("#title-id").style.color = "yellow"
+        })
+
+        this.haasButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#c52b2f"
+            document.querySelector ("#container-screen-calculator-id").style.color = "white"
+            document.querySelector ("#title-id").style.color = "white"
+        })
+
+        this.mclarenButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#e26b01"
+            document.querySelector ("#container-screen-calculator-id").style.color = "white"
+            document.querySelector ("#title-id").style.color = "white"
+        })
+        
+        this.mercedesButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#827b75"
+            document.querySelector ("#container-screen-calculator-id").style.color = "#08d4c5"
+            document.querySelector ("#title-id").style.color = "#08d4c5"
+        })
+
+        this.redBullButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#ffb428"
+            document.querySelector ("#container-screen-calculator-id").style.color = "#ff4440"
+            document.querySelector ("#title-id").style.color = "blue"
+        })
+
+        this.williamsButton.addEventListener ("click", () => {
+            document.querySelector ("#container-body-calculator-id").style.backgroundColor = "#034fa7"
+            document.querySelector ("#container-screen-calculator-id").style.color = "#0dfdfe"
+            document.querySelector ("#title-id").style.color = "#0dfdfe"
+        })
+
         this.buttonClear.addEventListener ("click", () => {
             this.clearFunc(this.buttonClear.value)
             this.validation = true
@@ -102,6 +173,126 @@ class Calculator {
         this.button09.addEventListener ("click", () => {
             this.outputFunc(this.button09.value)
         })
+
+
+        // INTERATION WITH THE KEYBOARD
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '0') {
+                this.button00.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '1') {
+                this.button01.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '2') {
+                this.button02.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '3') {
+                this.button03.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '4') {
+                this.button04.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '5') {
+                this.button05.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '6') {
+                this.button06.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '7') {
+                this.button07.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '8') {
+                this.button08.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '9') {
+                this.button09.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '.') {
+                this.buttonDot.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === 'c') {
+                this.buttonClear.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '+') {
+                this.buttonSum.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '-') {
+                this.buttonSubt.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '*') {
+                this.buttonMult.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '/') {
+                this.buttonDiv.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === '%') {
+                this.buttonPercentage.click();
+            }
+        });
+
+        document.addEventListener("keypress", (e) => {
+            if(e.key === 'Enter') {
+                this.buttonEqual.click();
+            }
+        });
+
+        /* 
+            DON'T WORKING
+        */
+        document.addEventListener("keypress", (e) => {
+            if(e.key === 'Backspace') {
+                this.buttonBackspace.click();
+            }
+        });
         
     }
 
@@ -162,7 +353,7 @@ class Calculator {
             this.number02 = this.outputValue
             this.total = Number(this.number01) * Number(this.number02)
             this.outputSpan.innerHTML = `${this.total}`
-        } else if (this.signValue === '/') {
+        } else if (this.signValue === '÷') {
             this.number02 = this.outputValue
             this.total = Number(this.number01) / Number(this.number02)
             this.outputSpan.innerHTML = `${this.total}`
@@ -240,12 +431,3 @@ class Calculator {
 }
 
 const calculator = new Calculator()
-
-
-
-/*
-
-    O QUE FALTA FAZER:
-    %
-
-*/
